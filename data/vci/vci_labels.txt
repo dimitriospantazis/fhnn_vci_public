@@ -1,0 +1,90 @@
+Left Precentral gyrus
+Right Precentral gyrus
+Left Superior Frontal gyrus
+Right Superior Frontal gyrus
+Left Superior Frontal gyrus, Orbital
+Right Superior Frontal gyrus, Orbital
+Left Middle Frontal gyrus
+Right Middle Frontal gyrus
+Left Middle Frontal gyrus, Orbital
+Right Middle Frontal gyrus, Orbital
+Left Inferior Frontal gyrus, Opercular
+Right Inferior Frontal gyrus, Opercular
+Left Inferior Frontal gyrus, Triangular
+Right Inferior Frontal gyrus, Triangular
+Left Inferior Frontal gyrus, Orbital
+Right Inferior Frontal gyrus, Orbital
+Left Rolandic operculum
+Right Rolandic operculum
+Left Supplementary Motor area
+Right Supplementary Motor area
+Left Olfactory cortex
+Right Olfactory cortex
+Left Superior Frontal gyrus, Medial
+Right Superior Frontal gyrus, Medial
+Left Superior Frontal gyrus, Medial Orbital
+Right Superior Frontal gyrus, Medial Orbital
+Left Gyrus Rectus
+Right Gyrus Rectus
+Left Insula
+Right Insula
+Left Cingulate gyrus, Anterior part
+Right Cingulate gyrus, Anterior part
+Left Cingulate gyrus, Middle part
+Right Cingulate gyrus, Middle part
+Left Cingulate gyrus, Posterior part
+Right Cingulate gyrus, Posterior part
+Left Hippocampus
+Right Hippocampus
+Left Parahippocampus
+Right Parahippocampus
+Left Amygdala
+Right Amygdala
+Left Calcarine fissure and surrounding cortex
+Right Calcarine fissure and surrounding cortex
+Left Cuneus
+Right Cuneus
+Left Lingual gyrus
+Right Lingual gyrus
+Left Superior Occipital lobe
+Right Superior Occipital lobe
+Left Middle Occipital lobe
+Right Middle Occipital lobe
+Left Inferior Occipital lobe
+Right Inferior Occipital lobe
+Left Fusiform gyrus
+Right Fusiform gyrus
+Left Postcentral gyrus
+Right Postcentral gyrus
+Left Superior Parietal gyrus
+Right Superior Parietal gyrus
+Left Inferior Parietal gyrus
+Right Inferior Parietal gyrus
+Left Supramarginal gyrus
+Right Supramarginal gyrus
+Left Angular gyrus
+Right Angular gyrus
+Left Precuneus
+Right Precuneus
+Left Paracentral lobule
+Right Paracentral lobule
+Left Caudate nucleus
+Right Caudate nucleus
+Left Putamen
+Right Putamen
+Left Pallidum
+Right Pallidum
+Left Thalamus
+Right Thalamus
+Left Heschl's gyrus
+Right Heschl's gyrus
+Left Superior Temporal gyrus
+Right Superior Temporal gyrus
+Left Temporal pole, Superior Temporal gyrus
+Right Temporal pole, Superior Temporal gyrus
+Left Middle temporal gyrus
+Right Middle temporal gyrus
+Left Temporal pole, Middle temporal gyrus
+Right Temporal pole, Middle temporal gyrus
+Left Inferior Temporal gyrus
+Right Inferior Temporal gyrus

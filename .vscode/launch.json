@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "args": [
+                "--task",
+                "lp",
+                "--act",
+                "None",
+                "--dataset",
+                "vci",   // "cam_can_multiple", "vci"
+                "--model",
+                "HyboNet",
+                "--lr",
+                "0.05",
+                "--dim",
+                "3",
+                "--num-layers",
+                "2",
+                "--bias",
+                "1",
+                "--dropout",
+                "0.25",
+                "--weight-decay",
+                "1e-3",
+                "--manifold",
+                "Lorentz",
+                "--log-freq",
+                "5",
+                "--cuda",
+                "-1",    // "-1" for CPU, "0" for GPU
+                "--patience",
+                "50",
+                "--grad-clip",
+                "0.1",
+                "--seed",
+                "1234",
+                "--save",
+                "1"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}

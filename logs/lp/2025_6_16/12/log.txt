@@ -1,0 +1,600 @@
+INFO:root:Using: cpu
+INFO:root:Using seed 1234.
+INFO:root:Use Super Node : False
+INFO:root:Use Batch Learning : True
+INFO:root:Use Margin Loss : True
+INFO:root:Use Cortical Thickness: False
+INFO:root:Use Myelination : False
+INFO:root:Step Size for Reduction Factor (Gamma) for learning rate : None
+INFO:root:Reduction Factor (Gamma) for learning rate : 0.5
+INFO:root:Using PLV Threshold : 0.490329
+INFO:root:Including one-hot encoding as node features
+INFO:root:LPModel(
+  (manifold): Lorentz manifold
+  (encoder): HyboNet(
+    (manifold): Lorentz manifold
+    (layers): Sequential(
+      (0): LorentzGraphConvolution(
+        (linear): LorentzLinear(
+          (manifold): Lorentz manifold
+          (weight): Linear(in_features=91, out_features=24, bias=True)
+          (dropout): Dropout(p=0.25, inplace=False)
+        )
+        (agg): LorentzAgg(
+          (manifold): Lorentz manifold
+        )
+      )
+      (1): LorentzGraphConvolution(
+        (linear): LorentzLinear(
+          (manifold): Lorentz manifold
+          (weight): Linear(in_features=24, out_features=3, bias=True)
+          (dropout): Dropout(p=0.25, inplace=False)
+        )
+        (agg): LorentzAgg(
+          (manifold): Lorentz manifold
+        )
+      )
+    )
+  )
+  (dc): FermiDiracDecoder()
+  (loss): MarginLoss()
+)
+INFO:root:Number of Train Graph Data Dicts in List: 20
+INFO:root:Number of Validation Graph Data Dicts in List: 5
+INFO:root:Number of Test Graph Data Dicts in List: 4
+INFO:root:Train Subject Indices [13, 15, 11, 17, 1, 4, 5, 2, 24, 3, 23, 25, 18, 28, 20, 7, 10, 14, 19, 6]
+INFO:root:Validation Subject Indices [26, 12, 8, 22, 21]
+INFO:root:Test Subject Indices [0, 16, 9, 27]
+INFO:root:Total number of parameters: 2287.0
+INFO:root:Max Number of Epochs : 150
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0001 val Phase of Epoch 0: Precision 0.825343, ROC 0.884994, Loss 1.786116, Accuracy 0.759395, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0001 test Phase of Epoch 0: Precision 0.785831, ROC 0.875911, Loss 1.782231, Accuracy 0.762195, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0002 val Phase of Epoch 1: Precision 0.792547, ROC 0.872357, Loss 1.749231, Accuracy 0.805972, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0002 test Phase of Epoch 1: Precision 0.803696, ROC 0.890197, Loss 1.733295, Accuracy 0.826350, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0003 val Phase of Epoch 2: Precision 0.825406, ROC 0.894956, Loss 1.718979, Accuracy 0.839927, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0003 test Phase of Epoch 2: Precision 0.830724, ROC 0.901225, Loss 1.706022, Accuracy 0.857141, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0004 val Phase of Epoch 3: Precision 0.868891, ROC 0.913276, Loss 1.710975, Accuracy 0.853793, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0004 test Phase of Epoch 3: Precision 0.849595, ROC 0.915972, Loss 1.696549, Accuracy 0.863205, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0005 lr: 0.05 time: 0.1550s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0005 val Phase of Epoch 4: Precision 0.827588, ROC 0.902966, Loss 1.715921, Accuracy 0.838893, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0005 test Phase of Epoch 4: Precision 0.844741, ROC 0.917128, Loss 1.697199, Accuracy 0.865407, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0006 val Phase of Epoch 5: Precision 0.818239, ROC 0.895015, Loss 1.730675, Accuracy 0.812554, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0006 test Phase of Epoch 5: Precision 0.866421, ROC 0.927906, Loss 1.695662, Accuracy 0.871353, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0007 val Phase of Epoch 6: Precision 0.834322, ROC 0.900425, Loss 1.732514, Accuracy 0.801625, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0007 test Phase of Epoch 6: Precision 0.847298, ROC 0.920350, Loss 1.701739, Accuracy 0.850405, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0008 val Phase of Epoch 7: Precision 0.850907, ROC 0.919849, Loss 1.722069, Accuracy 0.816424, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0008 test Phase of Epoch 7: Precision 0.849461, ROC 0.919568, Loss 1.704554, Accuracy 0.847577, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0009 val Phase of Epoch 8: Precision 0.826614, ROC 0.901208, Loss 1.739784, Accuracy 0.794015, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0009 test Phase of Epoch 8: Precision 0.836032, ROC 0.914728, Loss 1.712286, Accuracy 0.839460, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0010 lr: 0.05 time: 0.2570s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0010 val Phase of Epoch 9: Precision 0.856877, ROC 0.916653, Loss 1.730909, Accuracy 0.806026, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0010 test Phase of Epoch 9: Precision 0.854404, ROC 0.922657, Loss 1.707568, Accuracy 0.845207, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0011 val Phase of Epoch 10: Precision 0.844871, ROC 0.914145, Loss 1.732728, Accuracy 0.805181, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0011 test Phase of Epoch 10: Precision 0.859561, ROC 0.925968, Loss 1.705670, Accuracy 0.846488, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0012 val Phase of Epoch 11: Precision 0.836943, ROC 0.912962, Loss 1.731855, Accuracy 0.809113, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0012 test Phase of Epoch 11: Precision 0.856084, ROC 0.925252, Loss 1.706063, Accuracy 0.846942, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0013 val Phase of Epoch 12: Precision 0.876894, ROC 0.924472, Loss 1.728271, Accuracy 0.817786, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0013 test Phase of Epoch 12: Precision 0.857794, ROC 0.928829, Loss 1.702638, Accuracy 0.849695, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0014 val Phase of Epoch 13: Precision 0.859963, ROC 0.914404, Loss 1.732607, Accuracy 0.805451, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0014 test Phase of Epoch 13: Precision 0.849564, ROC 0.922004, Loss 1.704986, Accuracy 0.849504, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0015 lr: 0.05 time: 0.1530s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0015 val Phase of Epoch 14: Precision 0.842300, ROC 0.916686, Loss 1.728899, Accuracy 0.807875, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0015 test Phase of Epoch 14: Precision 0.869331, ROC 0.930507, Loss 1.704451, Accuracy 0.850324, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0016 val Phase of Epoch 15: Precision 0.854503, ROC 0.923856, Loss 1.724784, Accuracy 0.817714, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0016 test Phase of Epoch 15: Precision 0.832169, ROC 0.915716, Loss 1.711165, Accuracy 0.843714, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0017 val Phase of Epoch 16: Precision 0.853455, ROC 0.923326, Loss 1.724779, Accuracy 0.816687, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0017 test Phase of Epoch 16: Precision 0.862815, ROC 0.927870, Loss 1.707312, Accuracy 0.845007, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0018 val Phase of Epoch 17: Precision 0.841857, ROC 0.916987, Loss 1.730892, Accuracy 0.807632, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0018 test Phase of Epoch 17: Precision 0.881261, ROC 0.939435, Loss 1.700134, Accuracy 0.859594, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0019 val Phase of Epoch 18: Precision 0.869138, ROC 0.926061, Loss 1.725784, Accuracy 0.817082, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0019 test Phase of Epoch 18: Precision 0.859906, ROC 0.928285, Loss 1.704318, Accuracy 0.850180, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0020 lr: 0.05 time: 0.1540s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0020 val Phase of Epoch 19: Precision 0.849389, ROC 0.922236, Loss 1.725996, Accuracy 0.814234, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0020 test Phase of Epoch 19: Precision 0.894441, ROC 0.942957, Loss 1.699546, Accuracy 0.856036, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0021 val Phase of Epoch 20: Precision 0.863442, ROC 0.931234, Loss 1.722120, Accuracy 0.821383, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0021 test Phase of Epoch 20: Precision 0.871178, ROC 0.936786, Loss 1.700566, Accuracy 0.857600, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0022 val Phase of Epoch 21: Precision 0.864022, ROC 0.925360, Loss 1.726194, Accuracy 0.814354, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0022 test Phase of Epoch 21: Precision 0.877889, ROC 0.937734, Loss 1.700033, Accuracy 0.853763, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0023 val Phase of Epoch 22: Precision 0.850848, ROC 0.925061, Loss 1.723468, Accuracy 0.813185, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0023 test Phase of Epoch 22: Precision 0.874368, ROC 0.937397, Loss 1.701169, Accuracy 0.853964, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0024 val Phase of Epoch 23: Precision 0.844407, ROC 0.922618, Loss 1.724287, Accuracy 0.814050, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0024 test Phase of Epoch 23: Precision 0.871446, ROC 0.938444, Loss 1.697828, Accuracy 0.856563, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0025 lr: 0.05 time: 0.1740s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0025 val Phase of Epoch 24: Precision 0.853259, ROC 0.928737, Loss 1.719459, Accuracy 0.823112, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0025 test Phase of Epoch 24: Precision 0.883242, ROC 0.937909, Loss 1.700446, Accuracy 0.857674, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0026 val Phase of Epoch 25: Precision 0.867842, ROC 0.926577, Loss 1.723155, Accuracy 0.819831, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0026 test Phase of Epoch 25: Precision 0.902046, ROC 0.952026, Loss 1.689011, Accuracy 0.869504, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0027 val Phase of Epoch 26: Precision 0.859715, ROC 0.928210, Loss 1.719763, Accuracy 0.823946, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0027 test Phase of Epoch 26: Precision 0.874176, ROC 0.943025, Loss 1.693274, Accuracy 0.865440, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0028 val Phase of Epoch 27: Precision 0.860715, ROC 0.928471, Loss 1.719290, Accuracy 0.826364, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0028 test Phase of Epoch 27: Precision 0.881896, ROC 0.941936, Loss 1.696571, Accuracy 0.860010, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0029 val Phase of Epoch 28: Precision 0.879614, ROC 0.937961, Loss 1.713994, Accuracy 0.832234, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0029 test Phase of Epoch 28: Precision 0.902240, ROC 0.951264, Loss 1.692007, Accuracy 0.864832, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0030 lr: 0.05 time: 0.2580s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0030 val Phase of Epoch 29: Precision 0.857728, ROC 0.926941, Loss 1.720707, Accuracy 0.828558, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0030 test Phase of Epoch 29: Precision 0.870292, ROC 0.940380, Loss 1.697496, Accuracy 0.859930, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0031 val Phase of Epoch 30: Precision 0.861982, ROC 0.926143, Loss 1.721219, Accuracy 0.824882, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0031 test Phase of Epoch 30: Precision 0.873134, ROC 0.943650, Loss 1.694420, Accuracy 0.864166, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0032 val Phase of Epoch 31: Precision 0.854816, ROC 0.928050, Loss 1.719478, Accuracy 0.826060, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0032 test Phase of Epoch 31: Precision 0.884824, ROC 0.944070, Loss 1.696436, Accuracy 0.859959, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0033 val Phase of Epoch 32: Precision 0.849947, ROC 0.924033, Loss 1.722434, Accuracy 0.825348, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0033 test Phase of Epoch 32: Precision 0.880082, ROC 0.940511, Loss 1.698453, Accuracy 0.858457, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0034 val Phase of Epoch 33: Precision 0.849316, ROC 0.923163, Loss 1.723449, Accuracy 0.826529, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0034 test Phase of Epoch 33: Precision 0.866333, ROC 0.940553, Loss 1.696903, Accuracy 0.859571, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0035 lr: 0.05 time: 0.1744s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0035 val Phase of Epoch 34: Precision 0.871008, ROC 0.934111, Loss 1.717853, Accuracy 0.834998, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0035 test Phase of Epoch 34: Precision 0.861068, ROC 0.936986, Loss 1.701271, Accuracy 0.855734, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0036 val Phase of Epoch 35: Precision 0.855027, ROC 0.926867, Loss 1.721066, Accuracy 0.829945, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0036 test Phase of Epoch 35: Precision 0.855986, ROC 0.933557, Loss 1.703844, Accuracy 0.855192, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0037 val Phase of Epoch 36: Precision 0.851738, ROC 0.927732, Loss 1.721445, Accuracy 0.827826, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0037 test Phase of Epoch 36: Precision 0.870420, ROC 0.942106, Loss 1.697831, Accuracy 0.860021, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0038 val Phase of Epoch 37: Precision 0.888390, ROC 0.941194, Loss 1.715918, Accuracy 0.829582, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0038 test Phase of Epoch 37: Precision 0.879693, ROC 0.942200, Loss 1.701376, Accuracy 0.851782, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0039 val Phase of Epoch 38: Precision 0.872976, ROC 0.934720, Loss 1.719097, Accuracy 0.827283, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0039 test Phase of Epoch 38: Precision 0.883903, ROC 0.942361, Loss 1.702056, Accuracy 0.847174, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0040 lr: 0.05 time: 0.2510s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0040 val Phase of Epoch 39: Precision 0.897440, ROC 0.946270, Loss 1.713632, Accuracy 0.835481, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0040 test Phase of Epoch 39: Precision 0.880161, ROC 0.939879, Loss 1.704389, Accuracy 0.841551, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0041 val Phase of Epoch 40: Precision 0.882953, ROC 0.940203, Loss 1.716648, Accuracy 0.831671, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0041 test Phase of Epoch 40: Precision 0.855936, ROC 0.930192, Loss 1.709063, Accuracy 0.839039, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0042 val Phase of Epoch 41: Precision 0.884993, ROC 0.942177, Loss 1.715145, Accuracy 0.836009, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0042 test Phase of Epoch 41: Precision 0.886963, ROC 0.948943, Loss 1.698209, Accuracy 0.849661, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0043 val Phase of Epoch 42: Precision 0.844276, ROC 0.922828, Loss 1.725444, Accuracy 0.821122, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0043 test Phase of Epoch 42: Precision 0.875522, ROC 0.939742, Loss 1.703323, Accuracy 0.840167, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0044 val Phase of Epoch 43: Precision 0.871588, ROC 0.934721, Loss 1.719684, Accuracy 0.828134, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0044 test Phase of Epoch 43: Precision 0.903080, ROC 0.947596, Loss 1.700747, Accuracy 0.846207, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0045 lr: 0.05 time: 0.2510s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0045 val Phase of Epoch 44: Precision 0.841932, ROC 0.920215, Loss 1.727114, Accuracy 0.819148, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0045 test Phase of Epoch 44: Precision 0.863010, ROC 0.935732, Loss 1.705959, Accuracy 0.835257, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0046 val Phase of Epoch 45: Precision 0.877364, ROC 0.935255, Loss 1.719763, Accuracy 0.828706, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0046 test Phase of Epoch 45: Precision 0.882124, ROC 0.946003, Loss 1.696221, Accuracy 0.850919, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0047 val Phase of Epoch 46: Precision 0.873125, ROC 0.938206, Loss 1.716799, Accuracy 0.836479, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0047 test Phase of Epoch 46: Precision 0.865277, ROC 0.938012, Loss 1.701727, Accuracy 0.847230, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0048 val Phase of Epoch 47: Precision 0.888931, ROC 0.941537, Loss 1.713909, Accuracy 0.839481, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0048 test Phase of Epoch 47: Precision 0.874576, ROC 0.944158, Loss 1.696513, Accuracy 0.853620, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0049 val Phase of Epoch 48: Precision 0.838597, ROC 0.915090, Loss 1.730129, Accuracy 0.816338, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0049 test Phase of Epoch 48: Precision 0.858311, ROC 0.936941, Loss 1.698518, Accuracy 0.853138, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0050 lr: 0.05 time: 0.2550s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0050 val Phase of Epoch 49: Precision 0.865022, ROC 0.934542, Loss 1.716302, Accuracy 0.834337, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0050 test Phase of Epoch 49: Precision 0.861462, ROC 0.936103, Loss 1.700700, Accuracy 0.850539, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0051 val Phase of Epoch 50: Precision 0.888363, ROC 0.941763, Loss 1.713362, Accuracy 0.841234, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0051 test Phase of Epoch 50: Precision 0.865607, ROC 0.938872, Loss 1.698022, Accuracy 0.852754, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0052 val Phase of Epoch 51: Precision 0.880171, ROC 0.946511, Loss 1.707984, Accuracy 0.841609, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0052 test Phase of Epoch 51: Precision 0.875835, ROC 0.943667, Loss 1.695350, Accuracy 0.859616, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0053 val Phase of Epoch 52: Precision 0.871076, ROC 0.937254, Loss 1.715646, Accuracy 0.829776, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0053 test Phase of Epoch 52: Precision 0.890513, ROC 0.950152, Loss 1.691347, Accuracy 0.859786, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0054 val Phase of Epoch 53: Precision 0.867175, ROC 0.938430, Loss 1.714503, Accuracy 0.826702, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0054 test Phase of Epoch 53: Precision 0.882570, ROC 0.946384, Loss 1.693727, Accuracy 0.859279, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0055 lr: 0.05 time: 0.1970s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0055 val Phase of Epoch 54: Precision 0.860775, ROC 0.932725, Loss 1.718837, Accuracy 0.822363, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0055 test Phase of Epoch 54: Precision 0.843624, ROC 0.925330, Loss 1.706122, Accuracy 0.849127, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0056 val Phase of Epoch 55: Precision 0.859433, ROC 0.931698, Loss 1.718819, Accuracy 0.821744, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0056 test Phase of Epoch 55: Precision 0.883928, ROC 0.951237, Loss 1.686563, Accuracy 0.869716, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0057 val Phase of Epoch 56: Precision 0.862364, ROC 0.929900, Loss 1.718518, Accuracy 0.824631, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0057 test Phase of Epoch 56: Precision 0.903698, ROC 0.953093, Loss 1.687595, Accuracy 0.868794, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0058 val Phase of Epoch 57: Precision 0.888344, ROC 0.943374, Loss 1.709870, Accuracy 0.840641, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0058 test Phase of Epoch 57: Precision 0.891237, ROC 0.948833, Loss 1.687971, Accuracy 0.869189, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0059 val Phase of Epoch 58: Precision 0.871320, ROC 0.937783, Loss 1.709826, Accuracy 0.843236, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0059 test Phase of Epoch 58: Precision 0.870579, ROC 0.939988, Loss 1.692036, Accuracy 0.864973, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0060 lr: 0.05 time: 0.2590s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0060 val Phase of Epoch 59: Precision 0.859905, ROC 0.933403, Loss 1.711031, Accuracy 0.839258, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0060 test Phase of Epoch 59: Precision 0.890971, ROC 0.946923, Loss 1.687990, Accuracy 0.863799, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0061 val Phase of Epoch 60: Precision 0.877104, ROC 0.940177, Loss 1.706084, Accuracy 0.849129, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0061 test Phase of Epoch 60: Precision 0.876281, ROC 0.947257, Loss 1.685768, Accuracy 0.864502, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0062 val Phase of Epoch 61: Precision 0.878201, ROC 0.944099, Loss 1.701308, Accuracy 0.858864, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0062 test Phase of Epoch 61: Precision 0.898511, ROC 0.954602, Loss 1.680551, Accuracy 0.873105, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0063 val Phase of Epoch 62: Precision 0.850099, ROC 0.927030, Loss 1.712739, Accuracy 0.843166, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0063 test Phase of Epoch 62: Precision 0.908689, ROC 0.959377, Loss 1.676584, Accuracy 0.879490, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0064 val Phase of Epoch 63: Precision 0.875176, ROC 0.933990, Loss 1.711331, Accuracy 0.844371, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0064 test Phase of Epoch 63: Precision 0.890856, ROC 0.948822, Loss 1.683638, Accuracy 0.867772, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0065 lr: 0.05 time: 0.2590s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0065 val Phase of Epoch 64: Precision 0.890438, ROC 0.944879, Loss 1.702598, Accuracy 0.855667, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0065 test Phase of Epoch 64: Precision 0.886357, ROC 0.948349, Loss 1.682076, Accuracy 0.871787, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0066 val Phase of Epoch 65: Precision 0.869705, ROC 0.937898, Loss 1.704630, Accuracy 0.851697, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0066 test Phase of Epoch 65: Precision 0.863451, ROC 0.937873, Loss 1.689447, Accuracy 0.860862, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0067 val Phase of Epoch 66: Precision 0.890664, ROC 0.943199, Loss 1.703461, Accuracy 0.853009, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0067 test Phase of Epoch 66: Precision 0.890976, ROC 0.949946, Loss 1.681570, Accuracy 0.871598, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0068 val Phase of Epoch 67: Precision 0.846329, ROC 0.927700, Loss 1.708298, Accuracy 0.845698, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0068 test Phase of Epoch 67: Precision 0.885524, ROC 0.947509, Loss 1.682480, Accuracy 0.871192, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0069 val Phase of Epoch 68: Precision 0.858508, ROC 0.931192, Loss 1.709081, Accuracy 0.846470, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0069 test Phase of Epoch 68: Precision 0.902290, ROC 0.953587, Loss 1.679090, Accuracy 0.878978, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0070 lr: 0.05 time: 0.2570s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0070 val Phase of Epoch 69: Precision 0.861735, ROC 0.930963, Loss 1.709416, Accuracy 0.845349, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0070 test Phase of Epoch 69: Precision 0.881412, ROC 0.948877, Loss 1.680241, Accuracy 0.878777, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0071 val Phase of Epoch 70: Precision 0.870864, ROC 0.939764, Loss 1.701841, Accuracy 0.855116, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0071 test Phase of Epoch 70: Precision 0.869131, ROC 0.940230, Loss 1.684688, Accuracy 0.872255, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0072 val Phase of Epoch 71: Precision 0.887087, ROC 0.945523, Loss 1.698456, Accuracy 0.858961, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0072 test Phase of Epoch 71: Precision 0.883250, ROC 0.944735, Loss 1.683128, Accuracy 0.873717, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0073 val Phase of Epoch 72: Precision 0.858352, ROC 0.934404, Loss 1.702950, Accuracy 0.857632, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0073 test Phase of Epoch 72: Precision 0.882604, ROC 0.944573, Loss 1.683976, Accuracy 0.872025, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0074 val Phase of Epoch 73: Precision 0.871555, ROC 0.938311, Loss 1.702250, Accuracy 0.853484, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0074 test Phase of Epoch 73: Precision 0.882772, ROC 0.943535, Loss 1.687367, Accuracy 0.867157, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0075 lr: 0.05 time: 0.1540s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0075 val Phase of Epoch 74: Precision 0.886145, ROC 0.942431, Loss 1.699811, Accuracy 0.853656, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0075 test Phase of Epoch 74: Precision 0.892152, ROC 0.950323, Loss 1.681328, Accuracy 0.877029, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0076 val Phase of Epoch 75: Precision 0.877563, ROC 0.938249, Loss 1.703212, Accuracy 0.852826, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0076 test Phase of Epoch 75: Precision 0.865087, ROC 0.938397, Loss 1.687019, Accuracy 0.867262, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0077 val Phase of Epoch 76: Precision 0.873941, ROC 0.936478, Loss 1.703759, Accuracy 0.848591, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0077 test Phase of Epoch 76: Precision 0.901681, ROC 0.954004, Loss 1.677919, Accuracy 0.879275, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0078 val Phase of Epoch 77: Precision 0.888308, ROC 0.945197, Loss 1.697573, Accuracy 0.856201, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0078 test Phase of Epoch 77: Precision 0.843814, ROC 0.926923, Loss 1.694083, Accuracy 0.861420, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0079 val Phase of Epoch 78: Precision 0.916420, ROC 0.957254, Loss 1.692289, Accuracy 0.863227, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0079 test Phase of Epoch 78: Precision 0.894977, ROC 0.950899, Loss 1.679887, Accuracy 0.874267, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0080 lr: 0.025 time: 0.2540s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0080 val Phase of Epoch 79: Precision 0.883210, ROC 0.944082, Loss 1.699038, Accuracy 0.855829, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0080 test Phase of Epoch 79: Precision 0.836829, ROC 0.923665, Loss 1.695437, Accuracy 0.859477, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0081 val Phase of Epoch 80: Precision 0.885332, ROC 0.939631, Loss 1.703657, Accuracy 0.846223, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0081 test Phase of Epoch 80: Precision 0.895458, ROC 0.952425, Loss 1.678761, Accuracy 0.877502, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0082 val Phase of Epoch 81: Precision 0.913312, ROC 0.955757, Loss 1.691947, Accuracy 0.861989, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0082 test Phase of Epoch 81: Precision 0.881986, ROC 0.943148, Loss 1.686036, Accuracy 0.870187, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0083 val Phase of Epoch 82: Precision 0.889205, ROC 0.945744, Loss 1.698894, Accuracy 0.854892, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0083 test Phase of Epoch 82: Precision 0.862404, ROC 0.936892, Loss 1.685844, Accuracy 0.868516, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0084 val Phase of Epoch 83: Precision 0.859136, ROC 0.930999, Loss 1.704465, Accuracy 0.850299, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0084 test Phase of Epoch 83: Precision 0.869136, ROC 0.937733, Loss 1.686805, Accuracy 0.868064, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0085 lr: 0.025 time: 0.1550s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0085 val Phase of Epoch 84: Precision 0.867252, ROC 0.939205, Loss 1.698363, Accuracy 0.856311, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0085 test Phase of Epoch 84: Precision 0.879571, ROC 0.947000, Loss 1.680361, Accuracy 0.874454, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0086 val Phase of Epoch 85: Precision 0.864025, ROC 0.933453, Loss 1.702941, Accuracy 0.848591, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0086 test Phase of Epoch 85: Precision 0.856066, ROC 0.937927, Loss 1.681477, Accuracy 0.872441, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0087 val Phase of Epoch 86: Precision 0.864366, ROC 0.934917, Loss 1.702368, Accuracy 0.849986, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0087 test Phase of Epoch 86: Precision 0.877752, ROC 0.948158, Loss 1.676442, Accuracy 0.878644, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0088 val Phase of Epoch 87: Precision 0.878240, ROC 0.937742, Loss 1.701438, Accuracy 0.848307, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0088 test Phase of Epoch 87: Precision 0.870990, ROC 0.944367, Loss 1.677959, Accuracy 0.875669, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0089 val Phase of Epoch 88: Precision 0.885376, ROC 0.947453, Loss 1.695818, Accuracy 0.855398, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0089 test Phase of Epoch 88: Precision 0.884723, ROC 0.947274, Loss 1.679861, Accuracy 0.874624, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0090 lr: 0.025 time: 0.1500s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0090 val Phase of Epoch 89: Precision 0.871476, ROC 0.938397, Loss 1.701196, Accuracy 0.849071, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0090 test Phase of Epoch 89: Precision 0.862878, ROC 0.934469, Loss 1.688492, Accuracy 0.861996, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0091 val Phase of Epoch 90: Precision 0.890096, ROC 0.944859, Loss 1.697337, Accuracy 0.854202, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0091 test Phase of Epoch 90: Precision 0.898495, ROC 0.950967, Loss 1.676824, Accuracy 0.879041, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0092 val Phase of Epoch 91: Precision 0.884308, ROC 0.937330, Loss 1.703421, Accuracy 0.848492, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0092 test Phase of Epoch 91: Precision 0.866085, ROC 0.936730, Loss 1.685165, Accuracy 0.867460, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0093 val Phase of Epoch 92: Precision 0.886686, ROC 0.943386, Loss 1.697803, Accuracy 0.856373, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0093 test Phase of Epoch 92: Precision 0.903663, ROC 0.952323, Loss 1.677759, Accuracy 0.879138, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0094 val Phase of Epoch 93: Precision 0.872461, ROC 0.940816, Loss 1.696894, Accuracy 0.857849, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0094 test Phase of Epoch 93: Precision 0.907512, ROC 0.956282, Loss 1.671377, Accuracy 0.889515, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0095 lr: 0.025 time: 0.2580s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0095 val Phase of Epoch 94: Precision 0.853036, ROC 0.927299, Loss 1.707459, Accuracy 0.844635, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0095 test Phase of Epoch 94: Precision 0.901181, ROC 0.954671, Loss 1.674293, Accuracy 0.884492, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0096 val Phase of Epoch 95: Precision 0.853650, ROC 0.929084, Loss 1.704405, Accuracy 0.850792, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0096 test Phase of Epoch 95: Precision 0.900467, ROC 0.955088, Loss 1.671162, Accuracy 0.887650, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0097 val Phase of Epoch 96: Precision 0.893018, ROC 0.947549, Loss 1.695199, Accuracy 0.858766, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0097 test Phase of Epoch 96: Precision 0.875519, ROC 0.945034, Loss 1.679345, Accuracy 0.882034, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0098 val Phase of Epoch 97: Precision 0.894459, ROC 0.947643, Loss 1.694826, Accuracy 0.864190, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0098 test Phase of Epoch 97: Precision 0.887323, ROC 0.945559, Loss 1.680053, Accuracy 0.880026, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0099 val Phase of Epoch 98: Precision 0.912693, ROC 0.955393, Loss 1.689662, Accuracy 0.868347, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0099 test Phase of Epoch 98: Precision 0.866795, ROC 0.935828, Loss 1.685558, Accuracy 0.873687, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0100 lr: 0.025 time: 0.1490s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0100 val Phase of Epoch 99: Precision 0.875086, ROC 0.937523, Loss 1.701159, Accuracy 0.855383, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0100 test Phase of Epoch 99: Precision 0.881578, ROC 0.940773, Loss 1.684900, Accuracy 0.879241, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0101 val Phase of Epoch 100: Precision 0.862885, ROC 0.933450, Loss 1.701848, Accuracy 0.852355, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0101 test Phase of Epoch 100: Precision 0.895886, ROC 0.949028, Loss 1.677676, Accuracy 0.882367, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0102 val Phase of Epoch 101: Precision 0.903528, ROC 0.949718, Loss 1.695015, Accuracy 0.862508, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0102 test Phase of Epoch 101: Precision 0.906748, ROC 0.952240, Loss 1.675177, Accuracy 0.882115, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0103 val Phase of Epoch 102: Precision 0.890552, ROC 0.945461, Loss 1.695514, Accuracy 0.857161, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0103 test Phase of Epoch 102: Precision 0.900124, ROC 0.951504, Loss 1.675242, Accuracy 0.881128, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0104 val Phase of Epoch 103: Precision 0.863453, ROC 0.932559, Loss 1.703641, Accuracy 0.849265, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0104 test Phase of Epoch 103: Precision 0.884661, ROC 0.945049, Loss 1.682061, Accuracy 0.870821, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0105 lr: 0.025 time: 0.1532s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0105 val Phase of Epoch 104: Precision 0.849300, ROC 0.924779, Loss 1.709553, Accuracy 0.839232, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0105 test Phase of Epoch 104: Precision 0.888635, ROC 0.949016, Loss 1.677314, Accuracy 0.877997, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0106 val Phase of Epoch 105: Precision 0.888342, ROC 0.943902, Loss 1.698224, Accuracy 0.852370, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0106 test Phase of Epoch 105: Precision 0.888885, ROC 0.944015, Loss 1.683881, Accuracy 0.868529, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0107 val Phase of Epoch 106: Precision 0.882319, ROC 0.946996, Loss 1.694042, Accuracy 0.854981, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0107 test Phase of Epoch 106: Precision 0.888982, ROC 0.949130, Loss 1.677383, Accuracy 0.876354, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0108 val Phase of Epoch 107: Precision 0.862456, ROC 0.932863, Loss 1.704633, Accuracy 0.839394, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0108 test Phase of Epoch 107: Precision 0.845911, ROC 0.932800, Loss 1.686379, Accuracy 0.862542, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0109 val Phase of Epoch 108: Precision 0.874809, ROC 0.939451, Loss 1.700494, Accuracy 0.848182, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0109 test Phase of Epoch 108: Precision 0.886616, ROC 0.945749, Loss 1.682219, Accuracy 0.868526, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0110 lr: 0.025 time: 0.1480s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0110 val Phase of Epoch 109: Precision 0.865179, ROC 0.932663, Loss 1.705167, Accuracy 0.842884, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0110 test Phase of Epoch 109: Precision 0.883620, ROC 0.945699, Loss 1.680966, Accuracy 0.871130, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0111 val Phase of Epoch 110: Precision 0.888809, ROC 0.940734, Loss 1.701042, Accuracy 0.844787, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0111 test Phase of Epoch 110: Precision 0.860166, ROC 0.938482, Loss 1.682335, Accuracy 0.870532, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0112 val Phase of Epoch 111: Precision 0.862197, ROC 0.933227, Loss 1.702171, Accuracy 0.847969, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0112 test Phase of Epoch 111: Precision 0.852035, ROC 0.931027, Loss 1.688261, Accuracy 0.862397, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0113 val Phase of Epoch 112: Precision 0.890351, ROC 0.942665, Loss 1.698711, Accuracy 0.849691, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0113 test Phase of Epoch 112: Precision 0.884337, ROC 0.945503, Loss 1.680164, Accuracy 0.874900, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0114 val Phase of Epoch 113: Precision 0.879761, ROC 0.939678, Loss 1.697251, Accuracy 0.855403, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0114 test Phase of Epoch 113: Precision 0.880372, ROC 0.942149, Loss 1.681784, Accuracy 0.874909, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0115 lr: 0.025 time: 0.1658s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0115 val Phase of Epoch 114: Precision 0.872427, ROC 0.934427, Loss 1.700887, Accuracy 0.845507, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0115 test Phase of Epoch 114: Precision 0.868620, ROC 0.941602, Loss 1.677528, Accuracy 0.879514, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0116 val Phase of Epoch 115: Precision 0.870859, ROC 0.937926, Loss 1.696316, Accuracy 0.856868, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0116 test Phase of Epoch 115: Precision 0.858091, ROC 0.933714, Loss 1.686122, Accuracy 0.868975, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0117 val Phase of Epoch 116: Precision 0.858297, ROC 0.932859, Loss 1.698471, Accuracy 0.854311, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0117 test Phase of Epoch 116: Precision 0.918435, ROC 0.957241, Loss 1.669641, Accuracy 0.885924, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0118 val Phase of Epoch 117: Precision 0.871338, ROC 0.935833, Loss 1.696847, Accuracy 0.851871, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0118 test Phase of Epoch 117: Precision 0.853686, ROC 0.931457, Loss 1.684154, Accuracy 0.868099, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0119 val Phase of Epoch 118: Precision 0.866788, ROC 0.934232, Loss 1.697734, Accuracy 0.852443, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0119 test Phase of Epoch 118: Precision 0.899351, ROC 0.954147, Loss 1.672468, Accuracy 0.879096, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0120 lr: 0.025 time: 0.1510s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0120 val Phase of Epoch 119: Precision 0.849513, ROC 0.929909, Loss 1.695092, Accuracy 0.858018, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0120 test Phase of Epoch 119: Precision 0.875279, ROC 0.943795, Loss 1.676376, Accuracy 0.877715, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0121 val Phase of Epoch 120: Precision 0.868986, ROC 0.936657, Loss 1.695276, Accuracy 0.860510, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0121 test Phase of Epoch 120: Precision 0.899047, ROC 0.951783, Loss 1.671738, Accuracy 0.881359, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0122 val Phase of Epoch 121: Precision 0.867330, ROC 0.928274, Loss 1.703417, Accuracy 0.846429, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0122 test Phase of Epoch 121: Precision 0.858315, ROC 0.934203, Loss 1.681132, Accuracy 0.869687, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0123 val Phase of Epoch 122: Precision 0.863189, ROC 0.928671, Loss 1.700783, Accuracy 0.854737, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0123 test Phase of Epoch 122: Precision 0.893525, ROC 0.952374, Loss 1.669452, Accuracy 0.882626, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0124 val Phase of Epoch 123: Precision 0.876350, ROC 0.938241, Loss 1.694273, Accuracy 0.859124, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0124 test Phase of Epoch 123: Precision 0.863081, ROC 0.934690, Loss 1.679790, Accuracy 0.871361, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Epoch: 0125 lr: 0.025 time: 0.1677s
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0125 val Phase of Epoch 124: Precision 0.872016, ROC 0.937697, Loss 1.692698, Accuracy 0.865585, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0125 test Phase of Epoch 124: Precision 0.874931, ROC 0.938272, Loss 1.680940, Accuracy 0.869604, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0126 val Phase of Epoch 125: Precision 0.837425, ROC 0.920152, Loss 1.703517, Accuracy 0.847746, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0126 test Phase of Epoch 125: Precision 0.879286, ROC 0.942729, Loss 1.677255, Accuracy 0.878661, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0127 val Phase of Epoch 126: Precision 0.894716, ROC 0.944325, Loss 1.690899, Accuracy 0.861119, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0127 test Phase of Epoch 126: Precision 0.880185, ROC 0.942728, Loss 1.677444, Accuracy 0.875302, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0128 val Phase of Epoch 127: Precision 0.886243, ROC 0.943095, Loss 1.690727, Accuracy 0.862552, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0128 test Phase of Epoch 127: Precision 0.858352, ROC 0.931336, Loss 1.683624, Accuracy 0.868351, Edges 1486, Graphs 4
+INFO:root:Using batch learning index to embeddings dict for training
+INFO:root:Training Epoch Time : 0 seconds
+INFO:root:Val Epoch: 0129 val Phase of Epoch 128: Precision 0.880196, ROC 0.941181, Loss 1.692074, Accuracy 0.859399, Edges 1674, Graphs 5
+INFO:root:Test Epoch: 0129 test Phase of Epoch 128: Precision 0.885806, ROC 0.944324, Loss 1.674554, Accuracy 0.879735, Edges 1486, Graphs 4
+INFO:root:Early stopping
+INFO:root:Optimization Finished!
+INFO:root:Total time elapsed: 39.9144s
+INFO:root:Val set results: val Phase of Epoch 78: Precision 0.916420, ROC 0.957254, Loss 1.692289, Accuracy 0.863227, Edges 1674, Graphs 5
+INFO:root:Test set results: test Phase of Epoch 78: Precision 0.894977, ROC 0.950899, Loss 1.679887, Accuracy 0.874267, Edges 1486, Graphs 4
+INFO:root:Saved model in F:\MYPROJECTS17\project_RF1_VCI_networkanalysis\fhnn_vci_public\logs\lp\2025_6_16\12
+INFO:root:Saving 20 train embeddings to F:\MYPROJECTS17\project_RF1_VCI_networkanalysis\fhnn_vci_public\logs\lp\2025_6_16\12\embeddings
+INFO:root:Saving 5 val embeddings to F:\MYPROJECTS17\project_RF1_VCI_networkanalysis\fhnn_vci_public\logs\lp\2025_6_16\12\embeddings
+INFO:root:Saving 4 test embeddings to F:\MYPROJECTS17\project_RF1_VCI_networkanalysis\fhnn_vci_public\logs\lp\2025_6_16\12\embeddings
+INFO:root:Training Complete!

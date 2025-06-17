@@ -97,6 +97,6 @@ python step2_train_graph_iteration.py --task lp --act None --dataset vci --model
 If you use conda, you can recreate the environment with:
 
 ```bash
-conda env create -f environment.yml
+conda env create -f environment.yml -n <env-name>
 conda activate <env-name>
 ```
